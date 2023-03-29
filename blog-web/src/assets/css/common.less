@@ -1,0 +1,64 @@
+// 模块
+.l-banan {
+    width: 100%;
+    height: 15%;
+    position: relative;
+}
+
+//宽度在767-2000像素时
+@media screen and (max-width: 2000px) and (min-width: 767px) {
+
+    // 图片中心文字
+    .img-content {
+        position: absolute;
+        left: 45%;
+        top: 38%;
+        transform: translate(-45%, -38%);
+        color: #faf9f9;
+    }
+
+    .m-title {
+        margin-top: 70px;
+        font-size: 35px;
+        line-height: 100px;
+        text-align: center;
+    }
+
+    .m-description {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .pagination {
+        text-align: center;
+        margin: 20px 0;
+    }
+}
+
+//宽度在100-768像素时
+@media screen and (max-width:768px) and (min-width: 100px) {
+    .img-content {
+        position: absolute;
+        left: 30%;
+        top: 30%;
+        transform: translate(-45%, -45%);
+        color: #faf9f9;
+    }
+
+    .pagination {
+        text-align: center;
+        margin: 20px 0;
+    }
+}
+
+//图片
+.l-image {
+    height: 500px;
+    width: 100%;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
